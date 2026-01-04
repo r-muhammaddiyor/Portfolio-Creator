@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Creator</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="xl:pt-10" >
+      <div
+        class="flex items-center justify-between p-5 relative xl:max-w-[1215px] xl:w-full xl:mx-auto"
+      >
+        <img src="./images/logo.svg" alt="logo" class="w-[200px] xl:w-[250px]" />
+
+        <div class="hidden md:flex justify-between items-center gap-[30px]">
+          <a href="#" class="text-[18px] font-medium hover:text-[#FF8A56] transition-[0.9s]"
+            >About</a
+          >
+          <a href="#" class="text-[18px] font-medium hover:text-[#FF8A56] transition-[0.9s]"
+            >Services</a
+          >
+          <a href="#" class="text-[18px] font-medium hover:text-[#FF8A56] transition-[0.9s]"
+            >Projects</a
+          >
+          <a href="#" class="text-[18px] font-medium hover:text-[#FF8A56] transition-[0.9s]"
+            >Blog</a
+          >
+          <a href="#" class="text-[18px] font-medium hover:text-[#FF8A56] transition-[0.9s]"
+            >Book a call</a
+          >
+        </div>
+
+        <!-- burger menu -->
+
+        <label
+          for="bars"
+          class="absolute right-5 top-5 peer-checked:[&~.burger-menu]:translate-x-0 md:hidden"
+        >
+          <img src="./images/burger-menu.svg" alt="bars" />
+        </label>
+        <input class="peer" type="checkbox" id="bars" hidden />
+        <label for="bars" class="peer-checked:block fixed inset-0 hidden"></label>
+        <div
+          class="burger-menu fixed top-0 left-0 w-[300px] peer-checked:shadow-2xl peer-checked:shadow-black peer-checked:translate-x-0 -translate-x-full h-screen bg-white flex flex-col gap-[30px] p-5 rounded-r-xl"
+        >
+          <nav class="flex flex-col gap-2.5">
+            <a href="#" class="text-[20px] text-black font-bold active:border-b-red-500">About</a>
+            <a href="#" class="text-[20px] text-black font-bold active:border-b-red-500"
+              >Services</a
+            >
+            <a href="#" class="text-[20px] text-black font-bold active:border-b-red-500"
+              >Projects</a
+            >
+            <a href="#" class="text-[20px] text-black font-bold active:border-b-red-500">Blog</a>
+            <a href="#" class="text-[20px] text-black font-bold active:border-b-red-500">
+              Contact us
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+
+    <main>
+      <!-- Hero -->
+      <section class="pt-[50px] xl:pt-[125px]" >
+        <div
+          class="p-5 sm:flex sm:justify-between sm:items-center xl:max-w-[1215px] xl:gap-[50px] xl:w-full xl:mx-auto"
+        >
+          <div class="max-w-[355px] xl:max-w-[600px] w-full">
+            <h1
+              class="text-black xl:text-[72px] text-[28px] font-bold xl:mb-6.75 leading-[1.1] mb-4"
+            >
+              <span class="text-[#FF8A56]">I design products</span> <br />
+              that delight and inspire people.
+            </h1>
+            <p class="text-[#666666] leading-[1.1] text-[16px] mb-2 xl:mb-6.75">
+              Hi! I’m Jake, a product designer based in Berlin. I create user-friendly interfaces
+              for fast-growing startups.
+            </p>
+
+            <div class="mt-5 mb-5 flex items-center gap-[30px]">
+              <a
+                href="#"
+                class="bg-black hover:bg-transparent hover:text-black hover:border-1 hover:duration-700 border text-white inline-block pt-[10px] pb-[10px] pr-[20px] pl-[20px] xl:pt-[17px] xl:pb-[17px] xl:pl-[30px] xl:pr-[30px]"
+                >Book a call</a
+              >
+              <a href="#" class="text-black hover:scale-90 transition duration-300 ease-in-out"
+                >Download CV <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <img src="./images/hero-person.svg" alt="hero-img" class="w-[300px] xl:w-[500px]" />
+        </div>
+      </section>
+
+      <!-- trusted -->
+      <section hidden class="pt-[77px] pb-[80px]">
+        <div
+          class="flex flex-col items-center justify-center gap-[45px] xl:max-w-[1215px] xl:gap-[50px] xl:w-full xl:mx-auto"
+        >
+          <p class="text-[18px] text-black font-semibold">Trusted by</p>
+
+          <div class="flex items-center justify-center xl:gap-[100px] flex-wrap gap-[30px]">
+            <img src="./images/trusted/trusted-img1.svg" alt="trusted-img1" />
+            <img src="./images/trusted/trusted-img2.svg" alt="trusted-img2" />
+            <img src="./images/trusted/trusted-img3.svg" alt="trusted-img3" />
+            <img src="./images/trusted/trusted-img4.svg" alt="trusted-img4" />
+          </div>
+        </div>
+      </section>
+
+      <!-- services -->
+
+      <section class="pt-[80px] pb-[42px]" >
+        <div class="p-5 xl:max-w-[1215px] xl:gap-[50px] xl:w-full xl:mx-auto">
+          <div class="text-center">
+            <h3
+              class="text-[#FF5E69] text-[18px] sm:text-[22px] uppercase mb-5 font-bold tracking-[4px]"
+            >
+              Services
+            </h3>
+            <h2
+              class="text-black text-[24px] xl:text-[54px] font-bold mb-[100px] xl:tracking-[1px]"
+            >
+              Design that solves problems, <br />
+              one product at a time.
+            </h2>
+          </div>
+
+          <ul class="flex flex-col lg:flex-row items-start justify-between gap-[90px] flex-wrap">
+            <li class="max-w-[300px]">
+              <img
+                src="./images/services/services-img1.svg"
+                class="w-[70px] mb-[40px]"
+                alt="services-img1"
+              />
+
+              <h3 class="text-black text-[24px] font-bold mb-[25px]">What I can do for you</h3>
+              <p class="text-[16px] text-[#666666] mb-[21px] leading-[28px]">
+                Faster, better products that your users love. Here's all the services I provide:
+              </p>
+
+              <ul class="space-y-2">
+                <li class="flex items-start gap-3">
+                  <span class="w-2 h-2 bg-black mt-2"></span>
+                  <span>Design Strategy</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-2 h-2 bg-black mt-2"></span>
+                  <span>Web and Mobile App Design</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-2 h-2 bg-black mt-2"></span>
+                  <span>Front-end Development</span>
+                </li>
+              </ul>
+            </li>
+            <li class="max-w-[300px]">
+              <img
+                src="./images/services/services-img2.svg"
+                class="w-[70px] mb-[40px]"
+                alt="services-img2"
+              />
+
+              <h3 class="text-black text-[24px] font-bold mb-[25px]">Applications I'm fluent in</h3>
+              <p class="text-[16px] text-[#666666] mb-[21px] leading-[28px]">
+                Every designer needs the right tools to do the perfect job. Thankfully, I'm
+                multilingual.
+              </p>
+
+              <ul class="space-y-2">
+                <li class="flex items-start gap-3">
+                  <span class="w-2 h-2 bg-black mt-2"></span>
+                  <span>Sketch</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-2 h-2 bg-black mt-2"></span>
+                  <span>Webflow</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-2 h-2 bg-black mt-2"></span>
+                  <span>Figma</span>
+                </li>
+              </ul>
+            </li>
+            <li class="max-w-[300px]">
+              <img
+                src="./images/services/services-img3.svg"
+                class="w-[70px] mb-[40px]"
+                alt="services-img3"
+              />
+
+              <h3 class="text-black text-[24px] font-bold mb-[25px]">What you can expect</h3>
+              <p class="text-[16px] text-[#666666] mb-[21px] leading-[28px]">
+                I design products that are more than pretty. I make them shippable and usable.
+              </p>
+
+              <ul class="space-y-2">
+                <li class="flex items-start gap-3">
+                  <span class="w-2 h-2 bg-black mt-2"></span>
+                  <span>Clean and functional</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-2 h-2 bg-black mt-2"></span>
+                  <span>Device and user friendly</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-2 h-2 bg-black mt-2"></span>
+                  <span>Efficient and maintainable</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+
+      <section class="pt-20" >
+        <div class="p-5 xl:max-w-[1215px] xl:gap-[50px] xl:w-full xl:mx-auto">
+          <div class="flex flex-col sm:flex-row mb-[55px] xl:flex-row xl:items-center xl:justify-between">
+            <div>
+              <h3
+                class="text-[#B16CEA] text-[18px] sm:text-[22px] tracking-[4px] mb-[25px] font-bold"
+              >
+                PROJECTS
+              </h3>
+              <h2 class="text-[#000000] font-bold xl:text-[54px] xl:tracking-[1px] text-[28px] mb-5">
+                I bring results.<br class="hidden sm:inline-block" />My clients are proof.
+              </h2>
+            </div>
+
+            <a
+              href="#"
+              class="bg-black w-50 h-14.5 text-white flex items-center justify-center text-[18px] hover:bg-transparent hover:text-black hover:border hover:duration-700 border"
+              >View all projects</a
+            >
+          </div>
+
+          <div class="relative max-w-[1200px] mx-auto overflow-hidden">
+            <!-- SLIDER -->
+            <ul id="slider" class="flex transition-transform duration-700 ease-in-out">
+              <!-- CARD 1 -->
+              <li class="min-w-full xl:min-w-1/3 px-3">
+                <div class="bg-white shadow">
+                  <img src="./images/project/project-img1.png" alt="" class="w-full" />
+                  <div class="p-5">
+                    <h4 class="text-xs tracking-widest text-indigo-500 uppercase">Branding</h4>
+                    <h3 class="text-lg font-semibold">Soulful Rebrand</h3>
+                    <a href="#" class="inline-flex items-center gap-2 mt-3 font-medium">
+                      View Project <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <!-- CARD 2 -->
+              <li class="min-w-full xl:min-w-1/3 px-3">
+                <div class="bg-white shadow">
+                  <img src="./images/project/project-img2.png" alt="" class="w-full" />
+                  <div class="p-5">
+                    <h4 class="text-xs tracking-widest text-indigo-500 uppercase">
+                      Product Design
+                    </h4>
+                    <h3 class="text-lg font-semibold">Datadash Product Design</h3>
+                    <a href="#" class="inline-flex items-center gap-2 mt-3 font-medium">
+                      View Project <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <!-- CARD 3 -->
+              <li class="min-w-full xl:min-w-1/3 px-3">
+                <div class="bg-white shadow">
+                  <img src="./images/project/project-img3.png" alt="" class="w-full" />
+                  <div class="p-5">
+                    <h4 class="text-xs tracking-widest text-indigo-500 uppercase">Web Design</h4>
+                    <h3 class="text-lg font-semibold">Maize Website Design</h3>
+                    <a href="#" class="inline-flex items-center gap-2 mt-3 font-medium">
+                      View Project <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <!-- CONTROLS -->
+            <div class="flex gap-3 justify-end mt-6 xl:hidden">
+              <button id="prev" class="w-10 h-10 border flex items-center justify-center">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <button id="next" class="w-10 h-10 border flex items-center justify-center">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- blogs -->
+
+      <section hidden class="bg-black pt-20 pb-[144px]">
+        <div class="p-5 flex flex-col lg:flex-row lg:items-start lg:justify-between  xl:max-w-[1215px] xl:gap-[50px] xl:w-full xl:mx-auto">
+          <div>
+            <h3 class="text-[#FFA84B] uppercase mb-4 text-[18px] sm:text-[22px] font-bold tracking-[4px]">Blogs</h3>
+            <h2 class="text-[32px] mb-8 xl:text-[54px] text-white font-bold">Latest Blogs</h2>
+
+            <a href="#" class="text-white text-[16px] font-bold">View all <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <ul class="max-w-[690px] w-full">
+            <li class="border-b border-[#FFFFFF] pb-[30px]">
+              <p class="mb-[23px] text-[15px] text-[#ffffffaa]">April 16, 2021 <span>.</span> 6 mins</p>
+              <h3 class="text-[28px] font-bold mb-10 text-white">Design tips for designers, that cover everything you need</h3>
+
+              <a href="#" class="text-[18px] text-white font-bold mb-[36px]">Read the article <i class="fa-solid fa-arrow-right"></i></a>
+            </li>
+            <li class="border-b border-[#FFFFFF] pb-[30px] pt-[65px]">
+              <p class="mb-[23px] text-[15px] text-[#ffffffaa]">April 16, 2021 <span>.</span> 5 mins</p>
+              <h3 class="text-[28px] font-bold mb-10 text-white">How to build rapport with your web design clients</h3>
+
+              <a href="#" class="text-[18px] text-white font-bold mb-[36px]">Read the article <i class="fa-solid fa-arrow-right"></i></a>
+            </li>
+            <li class="border-b border-[#FFFFFF] pb-[30px] pt-[65px]">
+              <p class="mb-[23px] text-[15px] text-[#ffffffaa]">April 16, 2021 <span>.</span> 5 mins</p>
+              <h3 class="text-[28px] font-bold mb-10 text-white">Top 6 free website mockup tools 2021</h3>
+
+              <a href="#" class="text-[18px] text-white font-bold mb-[36px]">Read the article <i class="fa-solid fa-arrow-right"></i></a>
+            </li>
+            <li class="border-b border-[#FFFFFF] pb-[30px] pt-[65px]">
+              <p class="mb-[23px] text-[15px] text-[#ffffffaa]">April 16, 2021 <span>.</span> 7 mins</p>
+              <h3 class="text-[28px] font-bold mb-10 text-white">Logo design trends to avoid in 2021</h3>
+
+              <a href="#" class="text-[18px] text-white font-bold mb-[36px]">Read the article <i class="fa-solid fa-arrow-right"></i></a>
+            </li>
+            <li class="border-b border-[#FFFFFF] pb-[30px] pt-[65px]">
+              <p class="mb-[23px] text-[15px] text-[#ffffffaa]">April 16, 2021 <span>.</span> 7 mins</p>
+              <h3 class="text-[28px] font-bold mb-10 text-white">22 best UI design tools</h3>
+
+              <a href="#" class="text-[18px] text-white font-bold mb-[36px]">Read the article <i class="fa-solid fa-arrow-right"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- product -->
+
+      <section class="pt-[160px] pb-20" >
+        <div class="p-5 xl:max-w-[1215px] xl:gap-[50px] xl:w-full xl:mx-auto">
+          <div class="flex flex-col xl:items-start xl:justify-between xl:flex-row mb-[114px]">
+            <div>
+              <h3 class="text-[#FF5E69] text-[18px] sm:text-[18px] uppercase tracking-[4px] font-bold mb-[11px] ">Product Designer</h3>
+              <h2 class="text-[54px] text-black font-bold mb-5">That's me!</h2>
+            </div>
+            <p class="text-[18px] xl:text-[22px] max-w-[600px] text-[#666666] mb-5 font-normal">
+              Over the past 12 years, I've worked with a diverse range of clients, from startups to
+              Fortune 500 companies. I love crafting interfaces that delight users and help
+              businesses grow.
+            </p>
+          </div>
+          <div class="flex flex-col xl:flex-row xl:max-h-[626px] xl:h-full xl:items-start xl:justify-between gap-[20px] xl:max-w-[1215px] xl:w-full xl:flex-row"> 
+            <img class="w-[338px]"src="images/product/product-img1.png" alt="product-img1" />
+            <img class="w-[507px]" src="images/product/product-img2.png" alt="product-img2" />
+            <div class="flex gap-[20px] h-[626px] flex-col">
+              <img class="h-1/2 w-[338px]" src="images/product/product-img3.png" alt="product-img3" />
+              <img class="h-1/2 w-[338px]" src="images/product/product-img4.png" alt="product-img4" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- table -->
+      <section class="pt-[80px] pb-[80px]" >
+          <div class="flex flex-col p-5 xl:flex-row items-center justify-center gap-[45px] xl:max-w-[1215px] xl:gap-[50px] xl:w-full xl:mx-auto">
+          <div>
+            <h3 class="text-[36px] pb-[85px]">📚 Education</h3>
+            <div
+              class="flex items-start justify-between pt-[35px] pb-[35px] gap-[80px]"
+            >
+              <div>
+                <h5 class="font-bold text-[22px]">Stanford University</h5>
+                <p class="text-[#00000099]">MSc (Human Computer Interaction)</p>
+              </div>
+              <div class="flex items-end justify-end flex-col gap-[10px]">
+                <img src="./images/Vector.png" alt="" />
+                <p class="pr-[30px]">• 2013-2015</p>
+              </div>
+            </div>
+            <hr class="text-[#E5E5E5]" />
+            <div
+              class="flex items-start justify-between pt-[35px] pb-[35px] gap-[80px]"
+            >
+              <div>
+                <h5 class="font-bold text-[22px]">MIT Summer School</h5>
+                <p class="text-[#00000099]">UX Training Bootcamp</p>
+              </div>
+
+              <div class="flex items-end justify-end flex-col gap-[10px]">
+                <img src="./images/Vector.png" alt="" />
+                <p class="pr-[30px]">• 2013-2014</p>
+              </div>
+            </div>
+            <hr class="text-[#E5E5E5]" />
+            <div
+              class="flex items-start justify-between pt-[35px] pb-[35px] gap-[80px]"
+            >
+              <div>
+                <h5 class="font-bold text-[22px]">
+                  California State University
+                </h5>
+                <p class="text-[#00000099]">BSc in Software Engineering</p>
+              </div>
+              <div class="flex items-end justify-end flex-col gap-[10px]">
+                <img src="./images/Vector.png" alt="" />
+                <p class="pr-[30px]">• 2009-2012</p>
+              </div>
+            </div>
+            <hr class="text-[#E5E5E5]" />
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <h3 class="text-[36px] pb-[85px]">💼 Work Experience</h3>
+            <div
+              class="flex items-start justify-between pt-[35px] pb-[35px] gap-[80px]"
+            >
+              <div class="flex items-center justify-center gap-[10px]">
+                <div
+                  class="bg-[#FFB4E9] justify-center w-[50px] h-[50px] rounded-full flex items-center"
+                >
+                  <img src="./images/song.svg" alt="" />
+                </div>
+                <div>
+                  <h5 class="font-bold text-[22px]">SpaceFleet</h5>
+                  <p class="text-[#00000099]">Senior Product Designer</p>
+                </div>
+              </div>
+              <div class="flex items-end justify-end flex-col gap-[10px]">
+                <img src="./images/Vector.png" alt="" />
+                <p class="pr-[30px]">• April 2019 - Current</p>
+              </div>
+            </div>
+            <hr class="text-[#E5E5E5]" />
+            <div
+              class="flex items-start justify-between pt-[35px] pb-[35px] gap-[80px]"
+            >
+              <div class="flex items-center justify-center gap-[10px]">
+                <div
+                  class="bg-[#A5BEFF] w-[50px] h-[50px] flex items-center rounded-full justify-center"
+                >
+                  <img src="./images/rocket.svg" alt="music" />
+                </div>
+                <div>
+                  <h5 class="font-bold text-[22px]">MusicMash</h5>
+                  <p class="text-[#00000099]">Information Architect</p>
+                </div>
+              </div>
+
+              <div class="flex items-end justify-end flex-col gap-[10px]">
+                <img src="./images/Vector.png" alt="" />
+                <p class="pr-[30px]">• April 2016 - May 2017</p>
+              </div>
+            </div>
+            <hr class="text-[#E5E5E5]" />
+            <div
+              class="flex items-start justify-between pt-[35px] pb-[35px] gap-[80px]"
+            >
+              <div class="flex items-center justify-center gap-[10px]">
+                <div
+                  class="bg-[#FFC960] w-[50px] h-[50px] rounded-full flex items-center justify-center"
+                >
+                  <img src="./images/crown.svg" alt="king" />
+                </div>
+                <div>
+                  <h5 class="font-bold text-[22px]">Kingdom</h5>
+                  <p class="text-[#00000099]">Information Architect</p>
+                </div>
+              </div>
+              <div class="flex items-end justify-end flex-col gap-[10px]">
+                <img src="./images/Vector.png" alt="" />
+                <p class="pr-[30px]">• April 2016 - May 2017</p>
+              </div>
+            </div>
+            <hr class="text-[#E5E5E5]" />
+          </div>
+      </section>
+
+      <!-- testimonal -->
+
+      <section class="pt-[80px] pb-[80px]" >
+        <div class="p-5  xl:max-w-[1215px] xl:mx-auto">
+        <p class="text-[#4353FF] text-[18px] tracking-[4px] font-bold sm:text-[22px] uppercase">
+          Testimonials
+        </p>
+        <h3 class="font-bold text-[38px] xl:text-[54px]">Word on the street</h3>
+        <div class="flex flex-col gap-[30px] lg:flex-row lg:items-center lg:justify-between pt-[80px]">
+          <div>
+            <img src="./images/testimonal.svg" alt="man" />
+          </div>
+          <div>
+            <img
+              class="pb-[32px]"
+              src="./images/blockquote.svg"
+              alt="asaw"
+            />
+            <p class=" text-[16px] xl:text-[36px] font-bold">
+              Jade helped us build a software so <br />
+              intuitive that it didn't need a <br />
+              walkthrough. He solved complex <br />
+              problems with brilliant design.
+            </p>
+            <div class="pt-[111px] flex items-center justify-between">
+              <div>
+                <p class="font-bold text-[20px]">John Frankin</p>
+                <p class="text-[18px]">Founder, Double Bunch</p>
+              </div>
+              <div class="flex items-center gap-[5px]">
+                <div
+                  class="w-[54px] h-[54px] bg-black hover:bg-gray-700 duration-[0.4s] hover:scale-95 flex items-center justify-center"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="text-white"
+                      d="M6.85355 3.14645C7.04882 3.34171 7.04882 3.65829 6.85355 3.85355L3.70711 7H12.5C12.7761 7 13 7.22386 13 7.5C13 7.77614 12.7761 8 12.5 8H3.70711L6.85355 11.1464C7.04882 11.3417 7.04882 11.6583 6.85355 11.8536C6.65829 12.0488 6.34171 12.0488 6.14645 11.8536L2.14645 7.85355C1.95118 7.65829 1.95118 7.34171 2.14645 7.14645L6.14645 3.14645C6.34171 2.95118 6.65829 2.95118 6.85355 3.14645Z"
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+                <div
+                  class="w-[54px] h-[54px] bg-black hover:bg-gray-700 duration-[0.4s] hover:scale-95 flex items-center justify-center"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="text-white"
+                      d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+
+      <section class="bg-[#000000] text-white pb-20 pt-20" >
+        <div class="flex flex-col items-center text-center justify-center p-5">
+          <h2 class="text-[#FF8A56] font-bold text-[18px] tracking-[4px] sm:text-[22px]">FAQ</h2>
+          <h2 class="font-bold text-[38px] xl:text-[54px]">Frequently asked questions</h2>
+          <!-- section table 1 -->
+          <div class="flex flex-col justify-center xl:flex-row xl:items-center xl:justify-between gap-20">
+            <div>
+              <div
+                class="flex justify-between items-center gap-[100px] pt-[50px] pb-[50px]"
+              >
+                <h3 class="font-bold text-[24px]">
+                  What type of projects do you take on?
+                </h3>
+              </div>
+              <hr class="text-gray-500" />
+              <div
+                class="flex justify-between items-center gap-[100px] pt-[50px] pb-[50px]"
+              >
+                <h3 class="text-[22px] font-bold">What is your hourly rate?</h3>
+              </div>
+              <hr class="text-gray-500" />
+              <div
+                class="flex justify-between items-center gap-[100px] pt-[50px] pb-[50px]"
+              >
+                <h3 class="text-[22px] font-bold">
+                  What time-zone do you work in?
+                </h3>
+              </div>
+              <hr class="text-gray-500" />
+              <div
+                class="flex justify-between items-center gap-[100px] pt-[50px] pb-[50px]"
+              >
+                <h3 class="text-[22px] font-bold">
+                  What is the typical timeline for a project?
+                </h3>
+              </div>
+              <hr class="text-gray-500" />
+            </div>
+            <div>
+              <div
+                class="flex justify-between items-center gap-[100px] pt-[50px] pb-[50px]"
+              >
+                <h3 class="font-bold text-[24px]">
+                  How do you charge for projects ?
+                </h3>
+              </div>
+              <hr class="text-gray-500" />
+              <div
+                class="flex justify-between items-center gap-[100px] pt-[50px] pb-[50px]"
+              >
+                <h3 class="text-[22px] font-bold">
+                  What does your design process look like?
+                </h3>
+              </div>
+              <hr class="text-gray-500" />
+              <div
+                class="flex justify-between items-center gap-[100px] pt-[50px] pb-[50px]"
+              >
+                <h3 class="text-[22px] font-bold">
+                  What metrics do you use to measure success?
+                </h3>
+              </div>
+              <hr class="text-gray-500" />
+              <div
+                class="flex justify-between items-center gap-[100px] pt-[50px] pb-[50px]"
+              >
+                <h3 class="text-[22px] font-bold">
+                  What if I need help after the project is complete?
+                </h3>
+              </div>
+              <hr class="text-gray-500" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black text-white pt-[184px] pb-5">
+      <div class="p-5 xl:max-w-[1215px] xl:gap-[50px] xl:w-full xl:mx-auto">
+          <h2
+            class="text-start text-[32px] xl:text-[54px] font-bold mb-5"
+          >
+            Ready to make something kickass? <br />
+            <span class="text-[#3C46FF]">Let's get on a call.</span>
+          </h2>
+          <div class="flex xl:flex-row xl:items-start flex-col gap-[30px] items-start xl:justify-between">
+            <div>
+              <img src="./images/white-logo.svg" alt="logo" />
+              <p class="text-[#666666]">
+                4353 Delaware Avenue, San Francisco, USA
+              </p>
+              <div class="flex items-center gap-[5px]">
+                <img src="./images/email.svg" alt="icon" />
+                <p class="text-[#5C5C5C]">hi@thefolio.com</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-start lg:flex-row lg:items-center lg:justify-between gap-[50px]">
+              <div>
+                <li class="list-none">
+                  <ul class="p-[10px]">
+                    <a href="#">About</a>
+                  </ul>
+                  <ul class="p-[10px]">
+                    <a href="#">Contact</a>
+                  </ul>
+                  <ul class="p-[10px]">
+                    <a href="#">Dribbble</a>
+                  </ul>
+                </li>
+              </div>
+
+              <div>
+                <li class="list-none">
+                  <ul class="p-[10px]">
+                    <a href="#">Services</a>
+                  </ul>
+                  <ul class="p-[10px]">
+                    <a href="#">Blog</a>
+                  </ul>
+                  <ul class="p-[10px]">
+                    <a href="#">Instagram</a>
+                  </ul>
+                </li>
+              </div>
+
+              <div>
+                <li class="list-none">
+                  <ul class="p-[10px]">
+                    <a href="#">Experience</a>
+                  </ul>
+                  <ul class="p-[10px]">
+                    <a href="#">Projects</a>
+                  </ul>
+                  <ul class="p-[10px]">
+                    <a href="#">Twitter</a>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-[50px] flex items-center flex-col justify-center">
+            <p class="text-[#8A95AD]">
+              © All rights reserved. Sumit Hegde . Powered by Webflow /Image
+              License Info /Instructions /Changelog /Style Guide
+            </p>
+          </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
