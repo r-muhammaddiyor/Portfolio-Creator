@@ -12,8 +12,30 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Porfolio Creator" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
+    <!-- Loader -->
+
+    <div id="loader" class="fixed w-full h-full z-999 bg-black flex items-center justify-center top-0 duration-700 ">
+      <!-- From Uiverse.io by yohohopizza --> 
+      <div class="flex flex-row gap-2">
+        <div class="w-8 h-8 rounded-full bg-red-500 animate-bounce"></div>
+        <div
+          class="w-8 h-8 rounded-full bg-red-500 animate-bounce [animation-delay:-.2s]"
+        ></div>
+        <div
+          class="w-8 h-8 rounded-full bg-red-500 animate-bounce [animation-delay:-.2s]"
+        ></div>
+      </div>
+
+    </div>
+
     <!-- header -->
     <header class="xl:pt-10" >
       <div
@@ -73,7 +95,7 @@
 
     <main>
       <!-- Hero -->
-      <section class="pt-[50px] xl:pt-[125px]" >
+      <section class="pt-[50px]" >
         <div
           class="p-5 sm:flex sm:justify-between sm:items-center xl:max-w-[1215px] xl:gap-[50px] xl:w-full xl:mx-auto"
         >

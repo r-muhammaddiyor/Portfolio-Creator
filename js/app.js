@@ -2,6 +2,7 @@ const slider = document.getElementById('slider');
 const slides = slider.children;
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
+const elLoader = document.getElementById('loader');
 
 let index = 0;
 
@@ -22,3 +23,9 @@ prev.addEventListener('click', () => {
     updateSlider();
   }
 });
+
+  setTimeout(() => {
+    elLoader.style.cssText = `
+      top: -100%;
+    `
+  }, 1200);
